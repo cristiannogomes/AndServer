@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
-	MyHttpServer server;
-	TextView ipAddress;
+	private MyHttpServer server;
+	private TextView ipAddress;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
