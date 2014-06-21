@@ -11,12 +11,10 @@ public class MainActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
 		ipAddress = new TextView(this);
 		setContentView(ipAddress);
 		server = new MyHttpServer(MainActivity.this);
 		server.start();
-
 		ipAddress.setText(server.getIPAddress());
 	}
 
